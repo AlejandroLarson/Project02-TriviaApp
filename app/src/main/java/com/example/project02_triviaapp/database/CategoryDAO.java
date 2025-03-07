@@ -13,7 +13,6 @@ import java.util.List;
 
 @Dao
 public interface CategoryDAO {
-    // TODO: might want to check this conflict strategy
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     long insert(Category category);
 
